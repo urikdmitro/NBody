@@ -28,6 +28,7 @@ class Event {
 public:
   virtual ~Event() = default;
 
+  // TODO: Handled should be in private section
   bool Handled = false;
 
   virtual EventType GetEventType() const = 0;

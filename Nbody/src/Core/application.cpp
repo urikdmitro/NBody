@@ -1,4 +1,5 @@
 #include "application.h"
+#include "layer_stack.h"
 #include "log.h"
 #include "src/Platform/Linux/GLFW/window_glfw.h"
 
@@ -26,10 +27,22 @@ void Application::Run() {
   while (is_running_) {
     glClearColor(1, 0, 0, 0);
     glClear(GL_COLOR_BUFFER_BIT);
+
+    for (auto i = layer_stack_.begin(); i != layer_stack_.end(); ++i) {
+      (*i)->OnUpdate();
+    }
+
     window_->Update();
   }
 }
 
 void Application::OnEvent(Event &event) {
-  LOG_GLOBAL_TRACE("{0}", event.ToString());
+  /* LOG_GLOBAL_TRACE("{0}", event.ToString()); */
+
+  for (auto i = layer_stack_.rbegin(); i != layer_stack_.rend(); ++i) {
+    (*i)->OnEvent(event);
+
+    if (event.Handled)
+      break;
+  }
 }
