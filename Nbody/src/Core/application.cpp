@@ -10,7 +10,7 @@ Application::Application() : is_running_(true) {
       std::bind(&Application::OnEvent, this, std::placeholders::_1));
 
   // temporary
-  if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+  if (!gladLoadGLLoader((GLADloadproc)window_->GetProcAddress())) {
     LOG_GLOBAL_FATAL("Failed to initialize GLAD");
   }
 

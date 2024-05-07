@@ -1,3 +1,6 @@
 [submodule "Nbody/vendor/spdlog"]
 	path = Nbody/vendor/spdlog
 	url = https://github.com/gabime/spdlog.git
+[submodule "Nbody/vendor/imgui"]
+	path = Nbody/vendor/imgui
+	url = https://github.com/ocornut/imgui.git

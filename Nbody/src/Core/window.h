@@ -21,6 +21,7 @@ public:
   virtual int GetHeight() = 0;
   virtual void Update() = 0;
   virtual void SetEventCallback(const EventCallback &event_callback) = 0;
+  virtual void *GetProcAddress() = 0;
 };
 
 #endif // BREAKOUT_SRC_CORE_WINDOW_H_

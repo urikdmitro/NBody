@@ -1,8 +1,10 @@
 #ifndef BREAKOUT_SRC_PLATFORM_LINUX_GLFW_WINDOW_H_
 #define BREAKOUT_SRC_PLATFORM_LINUX_GLFW_WINDOW_H_
 
-#include "GLFW/glfw3.h"
+// #include "GLFW/glfw3.h"
 #include "window.h"
+
+struct GLFWwindow;
 
 class WindowGLFW : public WindowI {
 private:
@@ -32,6 +34,7 @@ public:
   int GetHeight() override;
   void Update() override;
   void SetEventCallback(const EventCallback &event_callback) override;
+  void *GetProcAddress() override;
 };
 
 #endif // BREAKOUT_SRC_PLATFORM_LINUX_GLFW_WINDOW_H_

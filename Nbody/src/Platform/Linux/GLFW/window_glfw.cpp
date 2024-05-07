@@ -1,4 +1,6 @@
 #include "window_glfw.h"
+#include "glad/glad.h"
+//
 #include "GLFW/glfw3.h"
 #include "src/Events/key_events.h"
 #include "src/Events/mouse_events.h"
@@ -20,6 +22,9 @@ WindowGLFW::WindowGLFW(const WindowProperties &window_properties) {
                        data_.properties.title.c_str(), nullptr, nullptr);
 
   glfwMakeContextCurrent(data_.glfw_window_);
+
+  gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+
   glfwSetWindowUserPointer(data_.glfw_window_, &data_);
 
   glfwSetWindowSizeCallback(data_.glfw_window_, WindowSizeCallback);
@@ -176,4 +181,8 @@ void WindowGLFW::CursorPosCallback(GLFWwindow *glfw_window, double x,
 
   MouseMovedEvent event(x, y);
   window_data.event_callback_(event);
+}
+
+void *WindowGLFW::GetProcAddress() {
+  return reinterpret_cast<void *>(&glfwGetProcAddress);
 }
