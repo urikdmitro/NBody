@@ -9,6 +9,8 @@ set(SOURCES #
     Nbody/src/Core/application.cpp
     Nbody/src/Core/window.cpp
     Nbody/src/Core/log.cpp
+    Nbody/src/Core/layer.cpp
+    Nbody/src/Core/layer_stack.cpp
     Nbody/src/Events/event.cpp
     Nbody/src/Events/event_dispatcher.h
     Nbody/src/Events/window_events.cpp
