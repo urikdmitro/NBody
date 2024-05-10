@@ -1,5 +1,5 @@
-#ifndef BREAKOUT_SRC_EVENTS_KEY_EVENTS_
-#define BREAKOUT_SRC_EVENTS_KEY_EVENTS_
+#ifndef NBODY_SRC_EVENTS_KEY_EVENTS_
+#define NBODY_SRC_EVENTS_KEY_EVENTS_
 
 #include "event.h"
 
@@ -42,4 +42,4 @@ public:
   EVENT_CLASS_TYPE(kKeyReleased)
 };
 
-#endif // BREAKOUT_SRC_EVENTS_KEY_EVENTS_
+#endif // NBODY_SRC_EVENTS_KEY_EVENTS_

@@ -1,5 +1,5 @@
-#ifndef BREAKOUT_SRC_EVENTS_EVENT_
-#define BREAKOUT_SRC_EVENTS_EVENT_
+#ifndef NBODY_SRC_EVENTS_EVENT_
+#define NBODY_SRC_EVENTS_EVENT_
 
 #include <string>
 
@@ -36,4 +36,4 @@ public:
   virtual std::string ToString() const;
 };
 
-#endif // BREAKOUT_SRC_EVENTS_EVENT_
+#endif // NBODY_SRC_EVENTS_EVENT_

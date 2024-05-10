@@ -1,5 +1,5 @@
-#ifndef BREAKOUT_SRC_CORE_GAME_
-#define BREAKOUT_SRC_CORE_GAME_
+#ifndef NBODY_SRC_CORE_GAME_
+#define NBODY_SRC_CORE_GAME_
 
 class Game {
 private:
@@ -17,4 +17,4 @@ public:
   void Render();
 };
 
-#endif // BREAKOUT_SRC_CORE_GAME_
+#endif // NBODY_SRC_CORE_GAME_

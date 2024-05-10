@@ -1,5 +1,5 @@
-#ifndef BREAKOUT_SRC_RENDERER_RENDERER_H_
-#define BREAKOUT_SRC_RENDERER_RENDERER_H_
+#ifndef NBODY_SRC_RENDERER_RENDERER_H_
+#define NBODY_SRC_RENDERER_RENDERER_H_
 
 #include "src/Renderer/shader.h"
 #include "src/Renderer/vertex_array.h"
@@ -12,4 +12,4 @@ public:
   void Draw(const VertexArray &vertex_array, const Shader &shader) const;
 };
 
-#endif // BREAKOUT_SRC_RENDERER_RENDERER_H_
+#endif // NBODY_SRC_RENDERER_RENDERER_H_

@@ -1,5 +1,5 @@
-#ifndef BREAKOUT_SRC_RENDERER_TEXTURE
-#define BREAKOUT_SRC_RENDERER_TEXTURE
+#ifndef NBODY_SRC_RENDERER_TEXTURE
+#define NBODY_SRC_RENDERER_TEXTURE
 
 #include <glad/glad.h>
 
@@ -23,4 +23,4 @@ public:
   void Bind();
 };
 
-#endif // BREAKOUT_SRC_RENDERER_TEXTURE
+#endif // NBODY_SRC_RENDERER_TEXTURE

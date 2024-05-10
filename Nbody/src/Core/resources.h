@@ -1,5 +1,5 @@
-#ifndef BREAKOUT_SRC_CORE_RESOURCES_H_
-#define BREAKOUT_SRC_CORE_RESOURCES_H_
+#ifndef NBODY_SRC_CORE_RESOURCES_H_
+#define NBODY_SRC_CORE_RESOURCES_H_
 
 #include <glad/glad.h>
 
@@ -21,4 +21,4 @@ private:
   static std::string ReadShaderSource(std::string shader_source);
 };
 
-#endif // BREAKOUT_SRC_CORE_RESOURCES_H_
+#endif // NBODY_SRC_CORE_RESOURCES_H_

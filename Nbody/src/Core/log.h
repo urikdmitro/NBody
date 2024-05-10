@@ -1,5 +1,5 @@
-#ifndef BREAKOUT_SRC_CORE_LOG_H_
-#define BREAKOUT_SRC_CORE_LOG_H_
+#ifndef NBODY_SRC_CORE_LOG_H_
+#define NBODY_SRC_CORE_LOG_H_
 
 #include "spdlog/spdlog.h"
 
@@ -21,4 +21,4 @@ public:
 #define LOG_GLOBAL_ERROR(...) Log::GetGlobalLogger()->error(__VA_ARGS__)
 #define LOG_GLOBAL_FATAL(...) Log::GetGlobalLogger()->critical(__VA_ARGS__)
 
-#endif // BREAKOUT_SRC_CORE_LOG_H_
+#endif // NBODY_SRC_CORE_LOG_H_

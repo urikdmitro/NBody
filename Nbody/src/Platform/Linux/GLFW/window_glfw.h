@@ -1,5 +1,5 @@
-#ifndef BREAKOUT_SRC_PLATFORM_LINUX_GLFW_WINDOW_H_
-#define BREAKOUT_SRC_PLATFORM_LINUX_GLFW_WINDOW_H_
+#ifndef NBODY_SRC_PLATFORM_LINUX_GLFW_WINDOW_H_
+#define NBODY_SRC_PLATFORM_LINUX_GLFW_WINDOW_H_
 
 // #include "GLFW/glfw3.h"
 #include "window.h"
@@ -35,6 +35,7 @@ public:
   void Update() override;
   void SetEventCallback(const EventCallback &event_callback) override;
   void *GetProcAddress() override;
+  void *GetNativeWindow() override;
 };
 
-#endif // BREAKOUT_SRC_PLATFORM_LINUX_GLFW_WINDOW_H_
+#endif // NBODY_SRC_PLATFORM_LINUX_GLFW_WINDOW_H_

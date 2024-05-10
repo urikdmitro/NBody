@@ -1,5 +1,5 @@
-#ifndef BREAKOUT_SRC_RENDERER_SHADER_
-#define BREAKOUT_SRC_RENDERER_SHADER_
+#ifndef NBODY_SRC_RENDERER_SHADER_
+#define NBODY_SRC_RENDERER_SHADER_
 
 #include "glad/glad.h"
 #include "glm/gtc/type_ptr.hpp"
@@ -44,4 +44,4 @@ public:
                   const glm::mat4 &value) const;
 };
 
-#endif // BREAKOUT_SRC_RENDERER_SHADER_
+#endif // NBODY_SRC_RENDERER_SHADER_
